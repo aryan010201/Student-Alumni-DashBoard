@@ -1,0 +1,222 @@
+/* General styles */
+body{
+    margin: 0;
+    padding: 0%;
+}
+
+
+#main-A {
+    position: relative;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    display: flex;
+}
+
+.head-a {
+    color: #ea6be3;
+    font-weight: 900;
+    list-style-type: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.head-a:hover {
+    background-color: #d0d0d0;
+    border: 2px solid black;
+}
+
+.navbar-a {
+    display: flex;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 3px 3px 10px rgb(119, 116, 116);
+    color: #ea6be3;
+}
+
+.profile-data {
+    display: flex;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
+.profile-icon {
+    cursor: pointer;
+}
+
+.modal-container {
+    display: flex;
+    margin-left: 10%;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    width: 80%;
+}
+
+.modal-1, .modal-2, .modal-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    height: 400px;
+    width: 30%;
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.modal-2{
+    overflow: hidden;
+}
+
+.modal-1:hover, .modal-2:hover, .modal-3:hover {
+    transform: scale(1.05);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+p {
+    font-family: sans-serif;
+    width: 80%;
+}
+
+.btn-a {
+    background-color: #00dade86;
+    background-image: linear-gradient(90deg, #00dade80 0%, #fb00ff76 100%);
+
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-a:hover {
+    background-color: #e64a19;
+}
+
+.btn-a:focus {
+    outline: none;
+}
+
+select {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border: 2px solid #ff5722;
+}
+
+/* Responsive design using media queries */
+@media (max-width: 1024px) {
+    /* For tablets and smaller devices */
+    .modal-container {
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .modal-1, .modal-2, .modal-3 {
+        width: 80%;
+        max-width: 400px;
+        margin: 15px auto;
+    }
+
+    .profile-data {
+        width: auto;
+        margin-left: 0;
+    }
+
+    /* Keep navbar horizontal but reduce size */
+    nav ul.left {
+        flex-direction: row; /* Ensure navbar stays horizontal */
+        padding: 0;
+    }
+
+    .head {
+        padding: 8px;
+        margin: 2px;
+        font-size: 14px; /* Reduced font size */
+    }
+
+    nav {
+        flex-direction: row; /* Keep the navigation horizontal */
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* For mobile devices */
+    .modal-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .modal-1, .modal-2, .modal-3 {
+        width: 90%;
+        padding: 20px;
+        margin: 10px auto;
+    }
+
+    .profile-data {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Keep navbar horizontal but further reduce size */
+    nav ul.left {
+        flex-direction: row; /* Ensure navbar stays horizontal */
+        padding: 0;
+        margin: 0;
+    }
+
+    .head {
+        padding: 5px;
+        margin: 1px;
+        font-size: 12px; /* Further reduced font size */
+    }
+
+    nav {
+        padding: 5px; /* Reduced padding for smaller screens */
+    }
+}
+
+.chat-icon{
+    color: #000000;
+}

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.chat-page{
+    height: 100vh;
+    display: flex;
+}
+
+.chats{
+    height: 100%;
+    width: 25%;
+    background-color: rgb(51, 47, 47);
+    border: 15px;
+}
+
+.chat-section{
+    width: 75%;
+    background-color: rgb(71, 69, 69);
+    border:1px solid red;
+}
+
+.active-user{
+    display: flex;
+    
+}
+
+.all-user{
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+
+}
+
+.user{
+    display: flex;
+}

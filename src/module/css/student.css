@@ -1,0 +1,243 @@
+body{
+    margin: 0;
+    padding: 0%;
+}
+
+#main{
+    position: relative;
+    
+}
+
+.student-body{
+    background-color: #ffffff;
+}
+
+.page{
+ display: flex;
+
+ 
+
+}
+.left{
+    display:flex;
+}
+
+
+.head-s{
+    color: #ea6be3;
+    font-weight: 900;
+    list-style-type:none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: sans-serif;
+    
+}
+
+.head-s:hover {
+    background-color: #e0e0e0;
+    border: 2px solid black;
+}
+
+
+
+nav{
+    display: flex;
+    
+}
+
+.navbar-s{
+    background-color: #ffffff;
+    box-shadow: 3px 3px 10px rgb(119, 116, 116);
+    color: #ea6be3;
+}
+
+.profile-id-s{
+    color: #ea6be3;
+    font-weight: 900;
+    font-family: sans-serif;
+
+}
+
+.profile-data{
+    display: flex;
+
+    margin-left: 50%;
+    justify-content: space-between;
+    width: 10%;
+}
+.profile-icon{
+    cursor: pointer;
+}
+
+.modal-container-s{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+    width: 80%;
+}
+
+.modal-1-s,.modal-2-s {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+
+    
+    margin-top: 10%;
+    margin-bottom: 30px;
+    /*border: 1px solid black;*/
+    height: 400px;
+    width: 30%;
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(119, 116, 116);
+
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    }
+
+    .modal-3-s{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        box-sizing: border-box;
+        background-color: rgb(255, 255, 255);
+    
+        
+        margin-top: 10%;
+        margin-bottom: 30px;
+        /*border: 1px solid black;*/
+        height: 400px;
+        width: 30%;
+    
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgb(119, 116, 116);
+    
+        
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
+        }
+
+
+
+
+.modal-1-s:hover, .modal-2-s:hover, .modal-3-s:hover {
+        
+    transform: scale(1.05);
+        
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+
+
+p{
+    font-family:sans-serif ;
+    width: 80%;
+}
+
+.btn-s {
+    background-color: #00dade86;
+    background-image: linear-gradient(90deg, #00dade80 0%, #fb00ff76 100%);
+
+    color: white;
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 50px;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; 
+}
+
+.btn-s:hover {
+    background-color: #e9aaa6; 
+}
+
+.btn:focus {
+    outline: none; 
+}
+
+
+select {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border: 2px solid #FF4B2B;
+}
+
+@media (min-width: 600px) {
+    .modal-1, .modal-2, .modal-3 {
+        width: 45%;
+        max-width: 45%;
+    }
+
+    .profile-data {
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .page {
+        flex-direction: row;
+    }
+
+    .left {
+        flex-direction: row;
+        margin-left: 20px;
+    }
+
+    .modal-container-s {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .modal-1-s, .modal-2-s, .modal-3-s {
+        width: 30%;
+    }
+
+    .profile-data {
+        width: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .modal-1, .modal-2, .modal-3 {
+        width: 28%;
+        margin-top: 10%;
+    }
+}
+.pink{
+    color:#ea6be3;
+}
+
+
+/* Apply gradient as text color */
+.gradient-text {
+    background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
